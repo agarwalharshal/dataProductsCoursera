@@ -1,0 +1,15 @@
+---
+title: "Jamshedpur Leaflet"
+author: "Harshal Agarwal"
+date: "16/10/2023"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+library(dplyr) # Load the dplyr package
+leaflet() %>%
+  setView(lng = 86.2029, lat =  22.8046, zoom = 13) %>%
+  addTiles() %>%
+  addMarkers(lng = 86.2029, lat =  22.8046, popup = "Hello, this is Jamshedpur, Jharkhand!")
+```
